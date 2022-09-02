@@ -23,7 +23,7 @@ body {
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
   color: #fff;
   margin-bottom: 12px;
@@ -85,6 +85,18 @@ body> img {
   z-index: -1;
 }
 
+header nav a {
+  position: absolute;
+  top: 5%;
+  left: 36px;
+}
+
+header nav a img {
+  width: 120px;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.1));
+  box-shadow: 
+}
+
 
 main {
   height: 100%;
@@ -97,7 +109,7 @@ main {
   width: 35%;
   height: 90vh;
   padding: 60px 40px;
-  border: 2px solid rgba(256,256,256,0.3);
+  border: 3px solid rgba(256,256,256,0.15);
   border-radius: 30px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
   background: rgba(256,256,256,0.1);
@@ -132,10 +144,11 @@ main {
   font-weight: bold;
   transition: 0.2s;
   cursor: pointer;
+  outline: 0px solid rgba(256,256,256,0.2);
 }
 
 .lefty form div input:focus {
-  outline: none;
+  outline: 2px solid rgba(256,256,256,0.2);
 }
 
 .lefty form div input::placeholder {
@@ -192,7 +205,7 @@ main {
 
 .lefty .greeting h1 {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: normal;
 }
@@ -206,7 +219,7 @@ main {
 }
 
 .lefty .clockcont .clockwrap h2 {
-  font-size: 5.2rem;
+  font-size: 4vw;
   color: #fff;
   cursor: default;
 }
@@ -262,8 +275,8 @@ main {
 .righty .quote {
   position: relative;
   height: 140px;
-  padding: 30px;
-  border: 2px solid rgba(256,256,256,0.3);
+  padding: 30px 40px;
+  border: 3px solid rgba(256,256,256,0.15);
   border-radius: 30px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
   background: rgba(256,256,256,0.1);
@@ -283,14 +296,19 @@ main {
 
 .righty .quote span:first-child {
   display: inline-block;
-  width: 80%;
+  width: 70%;
+  letter-spacing: 0.4px;
   line-height: 1.2rem;
 }
 
 .righty .quote span:last-child {
+  display: inline-block;
+  padding: 8px 12px;
   position: absolute;
   bottom: 30px;
-  right: 30px;
+  right: 40px;
+  background: rgb(31, 109, 255);
+  border-radius: 4px;
   font-size: 1.2rem;
   font-weight: 600;
 }
