@@ -87,15 +87,14 @@ body> img {
 
 
 main {
-  width: 100%;
   height: 100%;
-  padding: 4vh 5%;
+  margin: 4vh 5% 4vh 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .lefty {
-  width: 30%;
+  width: 35%;
   height: 90vh;
   padding: 60px 40px;
   border: 2px solid rgba(256,256,256,0.3);
@@ -104,6 +103,7 @@ main {
   background: rgba(256,256,256,0.1);
   text-align: center;
   backdrop-filter: blur(20px);
+  text-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 .lefty form {
@@ -142,7 +142,6 @@ main {
   color: #fff;
   font-size: 1rem;
   font-weight: normal;
-  text-shadow: 0 0 4px rgba(0,0,0,0.1);
 }
 
 .lefty form div button {
@@ -169,20 +168,33 @@ main {
   border-bottom: 1px solid rgba(256,256,256,0.1);
 }
 
-.lefty .greeting> span {
+.lefty .greeting> div {
+  position: relative;
   display: inline-block;
   width: 60px;
   height: 60px;
   margin-bottom: 20px;
   border-radius: 30px;
-  background: #eee;
+  background: url('../source/default-profile.png');
+  background-size: cover;
+}
+.lefty .greeting> div span {
+  position: absolute;
+  display: inline-block;
+  bottom: 3px;
+  right: 3px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-radius: 10px;;
+  background: rgb(31, 109, 255);
 }
 
 .lefty .greeting h1 {
   color: #fff;
   font-size: 1.6rem;
-  font-weight: 200;
-  letter-spacing: 0;
+  font-weight: 300;
+  letter-spacing: normal;
 }
 
 .lefty .clockcont .clockwrap {
@@ -196,7 +208,6 @@ main {
 .lefty .clockcont .clockwrap h2 {
   font-size: 5.2rem;
   color: #fff;
-  text-shadow: 0 0 4px rgba(0,0,0,0.1);
   cursor: default;
 }
 
@@ -216,6 +227,21 @@ main {
   box-shadow: 12px 12px 12px rgba(0,0,0,0.05);
 }
 
+.lefty .wtwrap .weather> div:nth-child(2) span:first-child {
+  display: block;
+  margin: 30px 0 16px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.lefty .wtwrap .weather> div:nth-child(2) span:last-child {
+  
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(31, 109, 255);
+}
+
 .lefty .wtwrap .sw {
   width: calc(50% - 8px);
   height: 100%;
@@ -231,10 +257,40 @@ main {
 .righty {
   width: 60%;
   height: 90vh;
-  padding: 60px 40px;
+}
+
+.righty .quote {
+  position: relative;
+  height: 140px;
+  padding: 30px;
   border: 2px solid rgba(256,256,256,0.3);
   border-radius: 30px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
   background: rgba(256,256,256,0.1);
   backdrop-filter: blur(20px);
+  color: #fff;
+  font-size: 0.9rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.righty .quote h3 {
+  display: inline-block;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.righty .quote span:first-child {
+  display: inline-block;
+  width: 80%;
+  line-height: 1.2rem;
+}
+
+.righty .quote span:last-child {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
