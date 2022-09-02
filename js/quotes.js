@@ -1,19 +1,19 @@
 const quotes = [
     {
-        quote: "You may shoot me with your words. You may cut me with your eyes. You may kill me with your hatefulness. But still, like air, I'll rise.",
-        author: "Maya Angelou",
+        quote: "Never stop fighting for what you believe in.",
+        author: "Ana Amari",
     },
     {
-        quote: "Nothing is absolute. Everything changes. Everything moves. Everything revolves. Everything flies and goes away.",
-        author: "Frida Kahlo",
+        quote: "Knowledge is power.",
+        author: "Francis Bacon",
     },
     {
         quote: "I took a deep breath and listened to the old brag of my heart. I am. I am. I am.",
         author: "Sylvia Plath",
     },
     {
-        quote: "To all the little girls who are watching this, never doubt that you are valuable and powerful and deserving of every chance and opportunity in the world to purse and achieve your dreams.",
-        author: "Hillary Clinton",
+        quote: "Crying does not indicate that you are weak. Since birth, it has always been a sign that you are alive",
+        author: "Charlotte Bronte",
     },
     {
         quote: "This is what my soul is telling me : Be peaceful and love everyone;",
@@ -24,8 +24,8 @@ const quotes = [
         author: "Eleanor Roosevelt",
     },
     {
-        quote: "I had reasoned this out in my mind : There was one of two things I had a right to, liberty or dath; If I could not have one, I would have the other.",
-        author: "Harriet Tubman",
+        quote: "You can't get hung up on thinking, 'Am I the victim of this situation?' No, I'm in charge of it.",
+        author: "Marie Claire",
     },
     {
         quote: "Freedom, by definition, is people realizing that they are their own leaders.",
@@ -36,8 +36,8 @@ const quotes = [
         author: "Gloria Steinem",
     },
     {
-        quote: "Words actually matters. They're significant, they can transform and open up our imagination.",
-        author: "Opal Tometi",
+        quote: "I'm not bossy, I'm the boss.",
+        author: "Beyonce",
     },
 ]
 

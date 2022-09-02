@@ -37,15 +37,17 @@
                         spellcheck="false"
                         maxlength="15"
                         placeholder="What's your name?">
-                        <button>Register</button>
+                        <button>Go!</button>
                     </div>
                 </form>
                 
                 <div class="greeting" id="greeting" class="hidden">
-                    <div>
+                    <div class="">
                         <span></span>
-                    </div>
+                        <span></span>
+                    </div><br>
                     <h1></h1>
+                    <p>Welcome back!</p>
                 </div>
 
                 <div class="clockcont">
@@ -89,13 +91,16 @@
                     <span></span>
                  </div>
             </div>
-                
-            <form id="todo-form">
-                <input type="text" placeholder="Write a To Do and Press Enter" required />
-            </form>
 
-            <ul id="todo-list">
-            </ul>
+            <div>
+                <ul id="todo-list">
+                </ul>
+                
+                <form id="todo-form">
+                    <h3>Write a To-do</h3>
+                    <input type="text" placeholder="What I'm going to do is" required />
+                </form>
+            </div>
 
         </article>
 
