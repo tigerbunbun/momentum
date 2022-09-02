@@ -1,14 +1,240 @@
-.hidden {
-    display: none;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid silver;
+}
+
+img {
+  width: 100px;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #252525;
+  letter-spacing: 0.1px;
+  background-size: cover;
+  background-position: center center;
 }
 
+h3 {
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a:link {
+  color: #252525;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #252525;
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+button {
+  height: 60px;
+  padding: 0 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid #CE0000;
+  background: transparent;
+  transition: 0.2s;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/*pc start*/
+
+
 body> img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 4vh 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lefty {
+  width: 30%;
+  height: 90vh;
+  padding: 60px 40px;
+  border: 2px solid rgba(256,256,256,0.3);
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  background: rgba(256,256,256,0.1);
+  text-align: center;
+  backdrop-filter: blur(20px);
+}
+
+.lefty form {
+  height: 160px;
+  padding: 40px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(256,256,256,0.1);
+}
+
+.lefty form div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.lefty form div input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.05);
+  background: rgba(256,256,256,0.3);
+  padding-left: 20px;
+  font-size: 1rem;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.lefty form div input:focus {
+  outline: none;
+}
+
+.lefty form div input::placeholder {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  text-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.lefty form div button {
+  height: 50px;
+  width: 120px;
+  margin-left: 10px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.05);
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  background: rgb(31, 109, 255);
+}
+
+.lefty form div button:hover {
+  background-color: #000;
+}
+
+.lefty .greeting {
+  height: 160px;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(256,256,256,0.1);
+}
+
+.lefty .greeting> span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: #eee;
+}
+
+.lefty .greeting h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 200;
+  letter-spacing: 0;
+}
+
+.lefty .clockcont .clockwrap {
+  border-radius: 20px;
+  padding: 80px 0;
+  margin-bottom: 16px;
+  background: rgba(256,256,256,0.3);
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.05);
+}
+
+.lefty .clockcont .clockwrap h2 {
+  font-size: 5.2rem;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0,0,0,0.1);
+  cursor: default;
+}
+
+.lefty .wtwrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+}
+
+.lefty .wtwrap .weather {
+  width: calc(50% - 8px);
+  height: 100%;
+  border-radius: 16px;
+  padding: 20px;
+  background: rgba(256,256,256,0.3);
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.05);
+}
+
+.lefty .wtwrap .sw {
+  width: calc(50% - 8px);
+  height: 100%;
+  border-radius: 16px;
+  padding: 20px;
+  background: rgba(256,256,256,0.3);
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.05);
+}
+
+
+
+
+.righty {
+  width: 60%;
+  height: 90vh;
+  padding: 60px 40px;
+  border: 2px solid rgba(256,256,256,0.3);
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  background: rgba(256,256,256,0.1);
+  backdrop-filter: blur(20px);
 }
