@@ -19,7 +19,6 @@
         <a href="index.html">
             <img src="source/logo2.svg" alt="">
         </a>
-        <!--<p>HYOJAE KWON</p>-->
         <nav>
         </nav>
     </header>
@@ -29,6 +28,8 @@
 
         <article class="lefty">
 
+            <section class="profile">
+
                 <h3>Profile</h3>
 
                 <form id="login-form" class="hidden">
@@ -37,12 +38,12 @@
                         required
                         spellcheck="false"
                         maxlength="15"
-                        placeholder="What's your name?">
+                        placeholder="Name">
                         <button>Go!</button>
                     </div>
                 </form>
                 
-                <div class="greeting" id="greeting" class="hidden">
+                <div id="greeting" class="hidden">
                     <div class="">
                         <span></span>
                         <span></span>
@@ -50,6 +51,8 @@
                     <h1></h1>
                     <p>Welcome back!</p>
                 </div>
+
+            </section>
 
                 <div class="clockcont">
                     <h3>Clock</h3>
@@ -59,10 +62,10 @@
                </div>
 
                 <div class="wtwrap">
-
+                    <h3>☀ Weather</h3>
                     <div class="weather" id="weather">
                         <div>
-                            <h3>☀ Weather</h3>
+                            
                         </div>
                         <div>
                             <span></span>
@@ -71,12 +74,12 @@
                         </div>
                     </div>
                     
-                    <div class="sw">
+                    <!--<div class="sw">
                         <div>
                             <h3>Stopwatch</h3>
                          </div>
                         <div></div>
-                    </div>
+                    </div>-->
                 </div>
 
         </article>
@@ -100,16 +103,19 @@
                 <div>
 
                     <ul id="todo-list">
-                        <div>
+                        <div id="char1">
                             <img src="source/character-1.png" alt="">
                             <p>Nothing to do yet.</p>
                         </div>
                     </ul>
                     
-                    <form id="todo-form">
-                        <h3>Add a To-do</h3>
-                        <input type="text" placeholder="Write and enter" required />
-                    </form>
+                    <div>
+                        <div></div>
+                        <form id="todo-form">
+                            <h3>Add a To-do</h3>
+                            <input type="text" placeholder="Write and enter" required />
+                        </form>
+                    </div>
 
                 </div>
             </div>
@@ -129,6 +135,7 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/char.js"></script>
     
 
 </body>

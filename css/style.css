@@ -73,6 +73,10 @@ ul {
   display: none;
 }
 
+.hidden2 {
+  display: hidden;
+}
+
 
 /*pc start*/
 
@@ -98,18 +102,6 @@ header> a img {
   filter: drop-shadow(0 0 4px rgba(0,0,0,0.1));
 }
 
-header> p {
-  position: absolute;
-  top: 20%;
-  left: -30px;
-  font-family: 'Poppins', sans-serif;
-  color: rgba(256,256,256,0.7);
-  font-size: 0.7rem;
-  letter-spacing: 6px;
-  transform: rotate(-90deg);
-}
-
-
 main {
   height: 100%;
   margin: 4vh 120px 4vh 200px;
@@ -130,7 +122,7 @@ main {
   text-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-.lefty form {
+.lefty .profile #login-form {
   height: 180px;
   padding: 40px 0;
   margin-bottom: 40px;
@@ -181,14 +173,14 @@ main {
   background-color: #000;
 }
 
-.lefty .greeting {
+.lefty #greeting {
   height: 180px;
   padding: 20px 0;
   margin-bottom: 40px;
   border-bottom: 1px solid rgba(256,256,256,0.1);
 }
 
-.lefty .greeting> div {
+.lefty #greeting> div {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -198,7 +190,7 @@ main {
   background: url('../source/default-profile.png');
   background-size: cover;
 }
-.lefty .greeting> div span {
+.lefty #greeting> div span {
   position: absolute;
   display: inline-block;
   bottom: 3px;
@@ -210,7 +202,7 @@ main {
   background: rgb(31, 109, 255);
 }
 
-.lefty .greeting h1 {
+.lefty #greeting h1 {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 500;
@@ -218,7 +210,7 @@ main {
   margin-bottom: 12px;
 }
 
-.lefty .greeting p {
+.lefty #greeting p {
   color: rgba(256,256,256,0.75);
   font-size: 0.9rem;
   font-weight: 300;
@@ -235,19 +227,24 @@ main {
 .lefty .clockcont .clockwrap h2 {
   font-size: 4vw;
   color: rgba(256,256,256,0.9);
-  font-weight: 300;
+  font-weight: 400;
   cursor: default;
 }
 
 .lefty .wtwrap {
-  display: flex;
+  /*display: flex;*/
   justify-content: space-between;
   width: 100%;
-  height: 140px;
+  height: 120px;
+}
+
+.lefty .wtwrap h3 {
+  margin-top: 40px;
 }
 
 .lefty .wtwrap .weather {
-  width: calc(50% - 5px);
+  width: 100%;
+  /*width: calc(50% - 5px);*/
   height: 100%;
   border-radius: 20px;
   padding: 20px;
@@ -351,12 +348,13 @@ main {
 .righty> div:nth-child(2)> div ul {
   width: 52%;
   height: calc(100% - 40px);
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: overlay;
   padding: 10px 30px 0 0;
   position: relative;
 }
 
-.righty> div:nth-child(2)> div ul div {
+.righty> div:nth-child(2)> div ul> div:nth-child(1) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -364,13 +362,13 @@ main {
   text-align: center;
 }
 
-.righty> div:nth-child(2)> div ul div img {
+.righty> div:nth-child(2)> div ul div:nth-child(1) img {
   width: 140px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   filter: drop-shadow(0 0 12px rgba(0,0,0,0.1));
 }
 
-.righty> div:nth-child(2)> div ul div p {
+.righty> div:nth-child(2)> div ul div:nth-child(1) p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   font-weight: 200;
@@ -407,7 +405,8 @@ main {
 .righty> div:nth-child(2)> div ul li span {
   display: inline-block;
   width: calc(100% - 40px);
-  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
   line-height: 1.6rem;
   font-weight: 500;
   color: #fff;
@@ -432,11 +431,19 @@ main {
   transform: scale(1.12);
 }
 
-.righty> div:nth-child(2)> div #todo-form {
+.righty> div:nth-child(2)> div> div:nth-child(2) {
   width: 44%;
+}
+
+.righty> div:nth-child(2)> div> div:nth-child(2)>div {
+  width: 100%;
+  height: 60px;
+}
+
+.righty> div:nth-child(2)> div> div:nth-child(2) #todo-form {
+  width: 100%;
   height: calc(100% - 100px);
   padding: 40px;
-  margin-top: 60px;
   border: 3px solid rgba(0,0,0,0.05);
   border-radius: 30px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
