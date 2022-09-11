@@ -42,14 +42,7 @@ function handleToDoSubmit(event) {
     saveTodos();
 }
 
-
-function hidechar() {
-    const char1 = document.getElementById("char1");
-    char1.style.display = "none";
-}
-
 toDoForm.addEventListener("submit", handleToDoSubmit);
-toDoForm.addEventListener("submit", hidechar);
 
 const savedTodos = localStorage.getItem(TODOS_KEY);
 

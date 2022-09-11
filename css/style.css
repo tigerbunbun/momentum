@@ -354,7 +354,8 @@ main {
   position: relative;
 }
 
-.righty> div:nth-child(2)> div ul> div:nth-child(1) {
+.righty> div:nth-child(2)> div ul> div {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -362,13 +363,13 @@ main {
   text-align: center;
 }
 
-.righty> div:nth-child(2)> div ul div:nth-child(1) img {
+.righty> div:nth-child(2)> div ul div img {
   width: 140px;
   margin-bottom: 24px;
   filter: drop-shadow(0 0 12px rgba(0,0,0,0.1));
 }
 
-.righty> div:nth-child(2)> div ul div:nth-child(1) p {
+.righty> div:nth-child(2)> div ul div p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   font-weight: 200;
